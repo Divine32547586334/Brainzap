@@ -1,0 +1,66 @@
+ion-content{
+  --background: none;
+  background: linear-gradient(170deg, #003F66, #002033);
+}
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container img{
+  margin-top: 100px;
+  max-width: 156px;
+
+}
+
+#container h1 {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 30px;
+  color: #ffffff;
+  line-height: 10px;
+  margin-bottom: 70px;
+  margin-top: -25px;
+}
+
+#container h1 .zap {
+  color: #FFB915; 
+}
+
+#container h1 .brain {
+  color: #ffffff; 
+}
+
+#container strong {
+  font-family: 'Poppins';
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+#container p {
+  font-family: 'Poppins';
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  margin-bottom: 150px;
+}
+
+#container ion-button {
+  --background: #FFB915;
+  --color: #002A45;
+  font-family: 'Poppins';
+  font-size: 15px;
+  font-weight: 600;
+  width: 173px;
+  height: 43px;
+  border-radius: 13px;
+  border-color: #ffffff;
+  margin-top: 20px;
+}

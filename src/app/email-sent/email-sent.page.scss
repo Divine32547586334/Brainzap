@@ -1,0 +1,189 @@
+ion-content {
+    --background: none;
+    background: linear-gradient(170deg, #003F66, #002033);
+    scroll-padding-bottom: 0px;
+}
+
+#signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+#back-btn {
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: normal;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    --color: #ffffff;
+}
+
+#back {
+    margin-left: -9px;
+}
+
+#logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -150px;
+}
+
+#logo {
+    max-width: 100px;
+}
+
+h2 {
+    font-family: 'Poppins';
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 25px;
+    margin-top: -25px;
+}
+
+p {
+    font-family: 'Poppins';
+    font-size: 17px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.80);
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+#signup-form {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+ion-input {
+    font-family: 'Poppins';
+    font-size: 15px;
+    margin-bottom: 20px;
+    --padding-start: 15px;
+    --background: #003F66;
+    --color: #ffffff;
+    --border-radius: 15px;
+    height: 50px;
+}
+
+#login-btn {
+    --background: #FFB915;
+    --color: #002A45;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 600;
+    width: 173px;
+    height: 43px;
+    border-radius: 13px;
+    border-color: #ffffff;
+    margin-top: 30px;
+}
+
+#login-link {
+    margin-top: -16px;
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+#login-link p {
+    font-size: 12px;
+    color: #ffffff;
+}
+
+#login-link .clickable-text {
+    font-size: 12px;
+    color: #FFB915;
+    cursor: pointer;
+}
+
+#picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+    max-height: 250px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#example-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center right;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    #logo-container {
+        margin-top: -120px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    #signup-form {
+        max-width: 350px;
+    }
+
+    #login-btn {
+        width: 150px;
+        height: 40px;
+    }
+
+    #picture-container {
+        max-height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    #logo-container {
+        margin-top: -100px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    #signup-form {
+        max-width: 300px;
+    }
+
+    #login-btn {
+        width: 200px;
+        height: 38px;
+    }
+
+    #picture-container {
+        max-height: 150px;
+    }
+
+    #example-picture {
+        object-position: center;
+    }
+}

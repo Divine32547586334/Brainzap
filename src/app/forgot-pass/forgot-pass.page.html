@@ -1,0 +1,46 @@
+<ion-content [fullscreen]="true" scroll-padding="false" forceOverscroll="false">
+  <div id="signup-container">
+    <ion-button [routerLink]="['/login']" 
+                routerDirection="back" 
+                fill="clear" 
+                id="back-btn">
+      <span><svg id="Arrow_next" data-name="Arrow next" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+        <path id="angle-small-right_1_" data-name="angle-small-right (1)" d="M16.909,20.842,17.816,20l-6.774-6.322a.573.573,0,0,1,0-.848L17.816,6.5l-.907-.846L10.135,11.98a1.714,1.714,0,0,0,0,2.54Z" transform="translate(-2.999 2.842)" fill="#fff"/>
+        <circle id="Ellipse_9" data-name="Ellipse 9" cx="15" cy="15" r="15" fill="#003f66" opacity="0"/>
+      </svg></span>
+      <span id="back">Back</span>
+    </ion-button>
+
+    
+    <div id="logo-container">
+      <img src="assets/brainZap_logo.png" alt="brainZap-logo" id="logo" />
+      <h2>Password Recovery</h2>
+      <p>If you've lost your password or wish to reset it, please
+        enter your email.
+      </p>
+    </div>
+
+    <form id="signup-form">
+      <!-- <ion-input type="text" label="Username"></ion-input> -->
+      <ion-input type="email" label="Email"></ion-input>
+      <!-- <ion-input type="password" label="Password"></ion-input>
+      <ion-input type="password" label="Confirm Password"></ion-input> -->
+    
+      <ion-button id="login-btn" [routerLink]="['/email-sent']" routerDirection="forward">Recover Password</ion-button>
+    </form>
+    
+    <!-- <div id="login-link">
+      <p>
+        <span class="dont">Already have an account? </span>
+        <span [routerLink]="['/login']" class="clickable-text" routerDirection="back">
+          Log in
+        </span>
+      </p>
+    </div> -->
+
+    <div id="picture-container">
+      <img src="assets/login.png" alt="bg" id="example-picture" />
+    </div>
+
+  </div>
+</ion-content>

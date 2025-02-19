@@ -1,0 +1,237 @@
+<ion-tabs>
+  <!-- Bottom Navigation Bar -->
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon src="assets/home.svg" class = "nav-icon"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="add">
+      <ion-icon src="assets/plus-circle.svg" class = "nav-icon"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="discover">
+      <ion-icon src="assets/compass.svg" class = "nav-con"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="settings">
+      <ion-icon src="assets/settings.svg" class = "nav-icon"></ion-icon>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+
+  <!-- Tab Pages -->
+  <ion-tab tab="home">
+    <!-- Header Section -->
+<div id="header">
+  <div id="profile-section">
+    <ion-avatar>
+      <img src="assets/pfp.png" alt="Profile Picture" />
+    </ion-avatar>
+    <div class="title">
+      <h2>Hi, RJ Pogi</h2>
+      <p>Find your lessons today!</p>
+    </div>
+  </div>
+  <img src="assets/search.png" id="search-icon" />
+</div>
+
+<ion-content id="home-page">
+  
+  <!-- Welcome Message
+  <div id="welcome-message">
+    <p>Find your lessons today!</p>
+  </div> -->
+
+  <!-- Configuration and Study Buttons -->
+  <div id="button-section">
+    <ion-button class = "config-btn">
+      <img src="assets/Final-Config.svg" class = "config-btn-img"/>
+    </ion-button>
+    <ion-button class = "study-btn">
+      <p>Study</p>
+      <img src="assets/bulb.png" />
+    </ion-button>
+  </div>
+
+  <!-- Recently Section -->
+  <div id="recently">
+    <h2>Recently</h2>
+    <div class="scroll-container">
+      <ion-segment-view>
+        <ion-segment-content id="first" style="width: 290px">
+          <ion-card>
+            <img src="assets/archi.png" alt="Architecture" />
+            <ion-card-content>
+              <h3>Architecture</h3>
+              <p>Cards (15)</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-segment-content>
+
+        <ion-segment-content id="second" style="width: 290px">
+          <ion-card>
+            <img src="assets/bio.png" alt="Biology" />
+            <ion-card-content>
+              <h3>Biology</h3>
+              <p>Cards (4)</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-segment-content>
+
+        <ion-segment-content id="third" style="width: 290px">
+          <ion-card>
+            <img src="assets/python.png" alt="Python Programming" />
+            <ion-card-content>
+              <h3>Python Progamming</h3>
+              <p>Cards (4)</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-segment-content>
+
+        <ion-segment-content id="third" style="width: 290px">
+          <ion-card>
+            <img src="assets/prog.png" alt="Python Programming" />
+            <ion-card-content>
+              <h3>Mobile Design</h3>
+              <p>Cards (15)</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-segment-content>
+      </ion-segment-view>
+      
+      
+    </div>
+  </div>
+
+  <!-- Decks Section -->
+  <div id="decks">
+    <div class="decks-header">
+      <h2>Decks</h2>
+      <ion-button class = "sort-btn">
+        <img src="assets/sort.png" />
+        <h2>Sort</h2>
+      </ion-button>
+    </div>
+    
+    <div class = "decks-container">
+    <div class="decks-category">
+      <ion-item class="decks-content">
+        <img src="assets/archi.png" class ="decks-item-img"/>
+        <ion-label>
+          <h2>Architecture</h2>
+          <p>Cards (4)</p>
+        </ion-label>
+        <ion-icon src="assets/right-arrow.svg" class = "right-arrow"></ion-icon>
+      </ion-item>
+    </div>
+
+    <div class="decks-category">
+      <ion-item class="decks-content">
+        <img src="assets/bio.png" class ="decks-item-img"/>
+        <ion-label>
+          <h2>Biology</h2>
+          <p>Cards (4)</p>
+        </ion-label>
+        <ion-icon src="assets/right-arrow.svg" class = "right-arrow"></ion-icon>
+      </ion-item>
+    </div>
+
+    <div class="decks-category">
+      <ion-item class="decks-content">
+        <img src="assets/python.png" class ="decks-item-img"/>
+        <ion-label>
+          <h2>Python Programming</h2>
+          <p>Cards (4)</p>
+        </ion-label>
+        <ion-icon src="assets/right-arrow.svg" class = "right-arrow"></ion-icon>
+      </ion-item>
+    </div>
+
+    <div class="decks-category">
+      <ion-item class="decks-content">
+        <img src="assets/integ.png" class ="decks-item-img"/>
+        <ion-label>
+          <h2>Integral Calculus</h2>
+          <p>Cards (4)</p>
+        </ion-label>
+        <ion-icon src="assets/right-arrow.svg" class = "right-arrow"></ion-icon>
+      </ion-item>
+    </div>
+
+    <div class="decks-category">
+      <ion-item class="decks-content">
+        <img src="assets/prog.png" class ="decks-item-img"/>
+        <ion-label>
+          <h2>General Programming</h2>
+          <p>Cards (4)</p>
+        </ion-label>
+        <ion-icon src="assets/right-arrow.svg" class = "right-arrow"></ion-icon>
+      </ion-item>
+    </div>
+  </div>
+  </div>
+
+  
+  
+  <!-- <ion-button class = "config-btn">
+    <img src="assets/Final-Config.svg" class = "config-btn-img"/>
+  </ion-button> -->
+
+  <!-- Discover Topics Section -->
+  <div id="discover-topics">
+    <ion-card>
+      <ion-card-content>
+        <h3>Discover Topics</h3>
+        <div class = "span-con">
+          <span class = "count">+100 </span>
+          <span class = "lessons">lessons</span>
+        </div>
+        <!-- <p>+100 lessons</p> -->
+        <ion-button class = "explore-btn">Explore More</ion-button>
+      </ion-card-content>
+      <img src="assets/dis.png" alt="Discover Topics" />
+    </ion-card>
+  </div>
+</ion-content>
+  </ion-tab>
+
+  <ion-tab tab="add">
+    <ion-content>
+      <h1>Add Page</h1>
+      <!-- Add your Search page content here -->
+    </ion-content>
+  </ion-tab>
+
+  <ion-tab tab="discover">
+    <ion-content>
+      <h1>Discover Page</h1>
+      <!-- Add your Profile page content here -->
+    </ion-content>
+  </ion-tab>
+
+  <ion-tab tab="settings">
+    <ion-content>
+      <h1>Settings Page</h1>
+      <!-- Add your Profile page content here -->
+    </ion-content>
+  </ion-tab>
+</ion-tabs>
+
+
+<!-- Footer Navigation -->
+<!-- <div id="footer-nav">
+  <ion-button class="active">
+    <ion-icon name="home-outline"></ion-icon>
+  </ion-button>
+  <ion-button>
+    <ion-icon name="add-outline"></ion-icon>
+  </ion-button>
+  <ion-button>
+    <ion-icon name="search-outline"></ion-icon>
+  </ion-button>
+  <ion-button>
+    <ion-icon name="settings-outline"></ion-icon>
+  </ion-button>
+</div> -->
+
+

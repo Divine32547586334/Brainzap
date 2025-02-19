@@ -1,0 +1,463 @@
+* {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-family: "Poppins";
+}
+ion-button {
+  --background: none !important;
+  --color: inherit !important;
+  --padding-start: 0 !important;
+  --padding-end: 0 !important;
+  --font-size: inherit !important;
+  --font: inherit !important;
+  min-height: 10px !important;
+  --box-shadow: none !important;
+}
+
+ion-card{
+  --border-radius: 0px !important;
+}
+
+// Header Section
+#header {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  padding-top: 45px;
+  border-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adjust the shadow as needed */
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+  // height: 125px;
+  background-color: #003F66;
+
+  #profile-section {
+    display: flex;
+    align-items: center;
+    // margin-top: 50px;
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      
+      h2{
+        color: #FFB915;
+        font-size: 22px;
+        font-weight: 600;
+        
+      }
+      p{
+        color: #fff;
+        font-size: 12px;
+        font-weight: 400;
+        
+      }
+    }
+  }
+
+  #search-icon {
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+    // margin-top: 52px;
+  }
+}
+
+#home-page {
+    --ion-background-color: linear-gradient(170deg, #003F66, #002033);
+  
+    
+  
+    // // Welcome Message
+    // #welcome-message {
+    //   text-align: center;
+    //   margin: 20px 0;
+  
+    //   p {
+    //     font-size: 12px;
+    //     color: #fff;
+    //     font-family: "Poppins";
+    //   }
+    // }
+  
+    // Button Section
+    #button-section {
+      margin-top: 130px;
+      display: flex;
+      justify-content: center;  /* Center horizontally */
+      align-items: center; /* Center vertically */
+      gap: 15px;
+      font-family: "Poppins";
+      font-size: 15px;
+      font-weight: 500;
+  
+      ion-button.config-btn{
+        display: flex;
+        justify-content: center;  /* Center horizontally */
+        align-items: center; /* Center vertically */
+        background: #FFB915;
+        color: #002A45;
+        border: 2px solid rgba(255, 255, 255, 0.28);
+        box-shadow: 0px 2px 0px rgba(255, 255, 255, 0.23);
+        font-weight: bold;
+        border-radius: 13px;
+        width: 42px;
+        height: 42px;
+      }
+
+      ion-button.config-btn .config-btn-img {
+        width: 25px; /* Example size */
+        margin: 0; /* Center the image if needed */
+      }
+
+      ion-button.study-btn{
+        display: flex;
+        justify-content: center;  /* Center horizontally */
+        align-items: center; /* Center vertically */
+        background: #FFB915;
+        color: #002A45;
+        border: 2px solid rgba(255, 255, 255, 0.28);
+        box-shadow: 0px 2px 0px rgba(255, 255, 255, 0.23);
+        font-weight: 600;
+        border-radius: 13px;
+        padding: 0px;
+        height: 42px;
+        width: 190px
+      }
+
+      .study-btn p{
+        margin-right: 8px;
+      }
+      
+    }
+  
+    // Recently Section
+    #recently {
+      margin-top: 20px;
+      padding: 0 15px;
+      font-family: "Poppins";
+  
+      h2 {
+        font-weight: 400;
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.80);
+      }
+  
+      .scroll-container {
+        display: flex;
+        gap: 15px;
+        overflow-x: auto;
+        padding: 15px 0;
+  
+        ion-card {
+          justify-content: left;
+          align-items: center;
+          display: flex;
+          width: 270px;
+          height: 75px;
+          background: #06507E;
+          color: #fff;
+          border-radius: 6px;
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  
+          img {
+            padding: 15px;
+            width: 85px;
+            height: 85px;
+          }
+  
+          ion-card-content {
+            padding: 10px;
+  
+            h3 {
+              font-size: 16px;
+              font-weight: 400;
+              margin-bottom: 5px;
+            }
+  
+            p {
+              font-size: 11px;
+              font-weight: 400;
+              color: rgba(255, 255, 255, 0.61);
+            }
+          }
+        }
+      }
+    }
+  
+    // Decks Section
+    #decks {
+      padding: 0 15px;
+      font-family: "Poppins";
+  
+      .decks-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+  
+        h2 {
+          font-size: 15px;
+          color: rgba(255, 255, 255, 0.80);
+          font-weight: 400;
+        }
+  
+        .sort-btn {
+          font-size: 14px;
+          border-radius: 5px;
+          width: 80px;
+          height: 30px;
+        }
+        .sort-btn img {
+          margin-right: 5px;
+          width: 20px;
+        }
+        .sort-btn h2 {
+          font-size: 15px; 
+          font-weight: 400;
+          color: rgba(255, 255, 255, 0.80);
+          margin-right: 8px;
+      }
+      }
+      
+      .decks-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0px;
+        --background: none;
+        --padding-start: 0px;
+        --inner-border-width: 0px 0px 0.55px 0px;
+        height: 75px;
+        --inner-padding-bottom: 15px; /* Adds space specifically between the content and underline */
+        .right-arrow{
+          filter: invert(53%) sepia(23%) saturate(515%) hue-rotate(135deg) brightness(97%) contrast(101%);
+          width: 20px;
+        }
+        .decks-item-img{
+          margin-right: 15px;
+        }
+
+        h2, p{
+          font-weight: 400;
+          color: rgba(255, 255, 255, 0.61);
+        }
+        .right-arrow{
+          fill: rgba(255, 255, 255, 0.61);
+        }
+      }
+      .scroll-horizontal {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        white-space: nowrap;
+        
+      }
+      
+      .scroll-item {
+        min-width: 200px;
+        margin-right: 16px;
+        background-color: #d9faff;
+        padding: 15px;
+        text-align: center;
+        border-radius: 5px;
+      }
+      
+      .scroll-container{
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      ion-segment-content{
+        flex-shrink: 1;
+        
+        // display: flex;
+        // flex-direction: row;
+        // align-items: flex-start; 
+        // gap: 5px; 
+        // padding: 0; 
+      }
+
+      .decks-content{
+        font-family: "Poppins";
+        h2{
+          color: #FFFFFF;
+          font-size: 17px;
+          margin-bottom: 8px;
+        }
+        p{
+          font-size: 12px;
+        }
+      }
+      
+      .decks-category{
+        img{
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      // ion-item.decks-category {
+      //   --background: #002033;
+      //   --border-color: #fff;
+      //   color: #fff;
+      //   margin-bottom: 10px;
+      //   border-radius: 10px;
+  
+      //   ion-thumbnail {
+      //     border-radius: 5px;
+  
+      //     img {
+      //       border-radius: 5px;
+      //     }
+      //   }
+  
+      //   ion-label {
+      //     h3 {
+      //       font-size: 16px;
+      //       font-weight: bold;
+      //     }
+  
+      //     p {
+      //       font-size: 14px;
+      //       color: #FFB915;
+      //     }
+      //   }
+      // }
+    }
+  
+    // Discover Topics Section
+    #discover-topics {
+      margin: 20px auto;
+      width: 347px;
+      height: 147px;
+      justify-content: center;
+      align-items: center;
+      
+
+  
+      ion-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #003F66;
+        border-radius: 10px;
+        padding: 15px;
+  
+        ion-card-content {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          font-family: "Poppins";
+  
+          h3 {
+            font-size: 15px;
+            font-weight: normal;
+            color: #fff;
+          }
+
+          .span-container {
+            display: flex; 
+            align-items: center;
+          }
+  
+          .count {
+            font-size: 28px;
+            font-weight: 600;
+            color: #ffffff;
+          }
+          
+          .lessons {
+            font-size: 15px;
+            color: #ffffff;
+            font-weight: normal;
+          }
+  
+          ion-button.explore-btn {
+            background: #FFB915;
+            color: #002A45;
+            border: 2px solid rgba(255, 255, 255, 0.28);
+            box-shadow: 0px 2px 0px rgba(255, 255, 255, 0.23);
+            font-size: 15px !important;
+            border-radius: 13px !important;
+            height: 42px;
+            width: 173px;
+            margin-top: 10px;
+          }
+        }
+
+        img {
+          width: 140px;
+          height: 120px;
+          border-radius: 4px;
+          margin-top: 7px;
+        }
+      }
+    }
+  }
+
+  ion-tabs{
+    --position: absolute;
+    bottom: 0;
+    z-index: 999;
+  }
+
+  // Footer Navigation
+  #footer-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #011B2F;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adjust the shadow as needed */
+    
+
+    ion-button {
+      color: #fff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+
+      &.active {
+        background: #FFB915;
+        color: #002A45;
+      }
+    }
+  }
+
+  ion-tab-bar {
+    // height: 85px;
+    height: 75px;
+    --background: #002A45;
+    --color-selected: #FFB915;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  ion-tab-button {
+    margin-bottom: 25px;
+    --color: #ffffff;
+  }
+  ion-icon .nav-icon {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .decks-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column by default */
+    gap: 16px; /* Spacing between items */
+  }
+  
+  @media (min-width: 768px) {
+    .decks-container {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on tablets and larger */
+    }
+  }
+
+  
+  
+  

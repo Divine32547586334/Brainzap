@@ -1,0 +1,135 @@
+ion-content {
+    --background: none;
+    background: linear-gradient(170deg, #003F66, #002033);
+}
+  
+#login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+}
+  
+#back-btn {
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: normal;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    --color: #ffffff;
+}
+
+#back{
+    margin-left: -9px;
+}
+
+#logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -150px;
+}
+
+#logo {
+    max-width: 100px;
+}
+
+h2 {
+    font-family: 'Poppins';
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 25px;
+    margin-top: -25px;
+}
+
+#login-form {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+    p{
+        font-family: "Poppins";
+        color: #ffffff;
+        font-size: 12px;
+        color:  #FFB915;
+        margin-top: 5px;
+        
+    }
+    .clickable-text {
+        font-size: 12px;
+        color: #FFB915;
+        cursor: pointer;
+    }
+}
+
+ion-input {
+    font-family: 'Poppins';
+    font-size: 15px;
+    margin-bottom: 20px;
+    --padding-start: 15px;
+    --background: #003F66;
+    --color: #ffffff;
+    --border-radius: 15px;
+    height: 50px;
+}
+
+#login-btn {
+    --background: #FFB915;
+    --color: #002A45;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 600;
+    width: 173px;
+    height: 43px;
+    border-radius: 13px;
+    border-color: #ffffff;
+    margin-top: 30px;
+}
+
+#signup-link {
+    margin-top: -16px;
+    text-align: center;
+    font-family: 'Poppins';
+
+    p .dont {
+        font-size: 12px;
+        color: #ffffff;
+    }
+
+    .clickable-text {
+        font-size: 12px;
+        color: #FFB915;
+        cursor: pointer;
+    }
+      
+}
+
+#picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures only the specified part of the image is displayed */
+    width: 900px; /* Adjust width as needed */
+    height: 250px; /* Adjust height as needed */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    /* border: 2px solid #ccc; */ /* Optional: Adds a border */
+
+    position: absolute; /* Makes the container positionable relative to its nearest positioned ancestor */
+    bottom: 0; /* Positions it at the bottom of the page */
+    left: 50%; /* Centers it horizontally */
+    transform: translateX(-50%); /* Corrects centering offset */
+}
+
+#example-picture {
+    width: 100%; /* Ensures the image scales to fit the container */
+    height: 100%; /* Ensures the image scales to fit the container */
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+    object-position: center left;
+}
+
